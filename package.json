@@ -9,7 +9,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "@getpara/react-sdk": "1.0.0",
+    "@getpara/react-sdk": "^1.4.1",
+    "@getpara/solana-wallet-connectors": "^1.4.1",
+    "@getpara/solana-web3.js-v1-integration": "^1.4.1",
+    "@solana-mobile/wallet-adapter-mobile": "^2.1.5",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-walletconnect": "^0.1.16",
+    "@solana/web3.js": "^1.98.0",
+    "@tanstack/react-query": "^5.66.9",
     "next": "14.2.15",
     "react": "^18",
     "react-dom": "^18"

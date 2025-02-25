@@ -19,17 +19,19 @@ function App() {
         Open Para Modal
       </button>
       <ParaModal
-        appName="Para Modal Starter Template"
-        authLayout={[AuthLayout.AUTH_FULL]}
-        para={para}
-        disableEmailLogin={false}
-        disablePhoneLogin={false}
-        isOpen={isModalOpen}
-        oAuthMethods={Object.values(OAuthMethod)}
-        onClose={() => setIsModalOpen(false)}
-        onRampTestMode={true}
-        twoFactorAuthEnabled={false}
-      />
+            para={para}
+            disableEmailLogin={false}
+            disablePhoneLogin={false}
+            isOpen={isModalOpen}
+            oAuthMethods={[OAuthMethod.GOOGLE,OAuthMethod.TWITTER,OAuthMethod.APPLE,OAuthMethod.DISCORD,OAuthMethod.FACEBOOK]}
+            authLayout={["AUTH:FULL","EXTERNAL:CONDENSED"]}
+            externalWallets={["PHANTOM","BACKPACK","GLOW"]}
+            twoFactorAuthEnabled
+            recoverySecretStepEnabled
+            hideWallets
+            onRampTestMode={true}
+            onClose={() => setIsModalOpen(false)}
+          />
     </div>
   );
 }
